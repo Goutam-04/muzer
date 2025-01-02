@@ -10,8 +10,8 @@ const Appbar = () => {
             <div className="flex justify-center">
                 <div>muzi</div>
                 <div>
-                    {session.data?.user&&<button onClick={() => signIn()} >Sign In</button>}
-                    {!session.data?.user&&<button onClick={() => signOut()} >Log Out</button>}
+                    {!session.data?.user&&<button onClick={() => signIn()} >Sign In</button>}
+                    {session.data?.user&&<button onClick={() => signOut()} >Log Out</button>}
                     
                 </div>
             </div>
